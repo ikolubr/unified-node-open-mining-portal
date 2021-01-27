@@ -1,29 +1,13 @@
 {
-    "enabled": false,
-    "coin": "litecoin.json",
+    "enabled": true,
+    "coin": "bitcoin.json",
 
     "auxes": [ // Defines auxillery coins
-        {
-            "coin": "lottoshares.json",
-            "daemons": [ // It is reccomended to supply multiple daemons here for redundancy
-                {
-                    "host": "127.0.0.1",
-                    "port": 23327,
-                    "user": "lottosharesrpc",
-                    "password": "By66dCmyX44uUbA7P3qqXJQeT3Ywd8dZ4dJdfgxCAxbg"
-                }
-            ]
-        }
     ],
     "address": "n4jSe18kZMCdGcZqaYprShXW6EH1wivUK1",
 
-    "rewardRecipients": {
-        "n37vuNFkXfk15uFnGoVyHZ6PYQxppD3QqK": 1.5,
-        "22851477d63a085dbc2398c8430af1c09e7343f6": 0.1
-    },
-
     "paymentProcessing": {
-        "enabled": true,
+        "enabled": false,
         "paymentInterval": 600,
         "minimumPayment": 9999999999,
         "daemon": {
@@ -42,7 +26,7 @@
             "diff": 32,
             "varDiff": {
                 "minDiff": 8,
-                "maxDiff": 512,
+                "maxDiff": 30948903853945,
                 "targetTime": 15,
                 "retargetTime": 90,
                 "variancePercent": 30
@@ -55,10 +39,10 @@
 
     "daemons": [
         {
-            "host": "127.0.0.1",
-            "port": 19332,
-            "user": "testuser",
-            "password": "testpass"
+            "host": "10.0.1.240",
+            "port": 62457,
+            "user": "lccuser",
+            "password": "lccpwd"
         }
     ],
 
